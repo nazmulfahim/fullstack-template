@@ -1,0 +1,41 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "Start from this template",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon --exec node_modules/.bin/babel-node src/index.js --ext js,graphql ",
+    "heroku-postbuild": "babel src --out-dir dist --copy-files",
+    "startProd": "node dist/index.js",
+    "prod": "npm run build && npm run startProd",
+    "web-push": "web-push"
+  },
+  "author": "Nazmul Islam Fahim",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "apollo-server-koa": "^3.6.3",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.0",
+    "graphql-depth-limit": "^1.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa-helmet": "^6.1.0",
+    "mongoose": "^6.2.4",
+    "nodemailer": "^6.7.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.5",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.14.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.14.5",
+    "@babel/plugin-proposal-optional-chaining": "^7.14.5",
+    "@babel/plugin-proposal-private-methods": "^7.14.5",
+    "@babel/plugin-syntax-bigint": "^7.8.3",
+    "@babel/preset-env": "^7.14.5",
+    "@babel/register": "^7.14.5"
+  }
+}

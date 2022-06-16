@@ -1,0 +1,22 @@
+$color-white: #fff;
+$color-bg: #fff;
+$color-white-bg: #f6f8fc;
+$color-black: #000;
+$color-dark: #333333;
+$color-dark-bg: #1c1d1d;
+$color-primary: var(--primary);
+$color-primary-text: var(--primary-contrast);
+// $color-primary: #0099ff;
+// $color-primary-text: #005dc1;
+$color-success: #58ba2e;
+$color-info: #2d6efc;
+$color-warning: #ffd400;
+$color-danger: #ff4d5e;
+$color-primary-dark: #070c18;
+$color-primary-gradient-light: linear-gradient(
+  228.54deg,
+  #1786ff 2.74%,
+  #3e9bff 50%
+);
+
+$color-primary-gradient: linear-gradient(83.92deg, #002247 9.24%, #011431 100%);

@@ -1,0 +1,37 @@
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  // input:checked + .__box::after {
+  //   transform: translate(22px);
+  //   @include media-max($tab) {
+  //     transform: translate(13px);
+  //   }
+  // }
+  input:checked + .checkbox__box {
+    border: 2px solid $color-primary;
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+  &__input {
+    display: none;
+  }
+  &__box {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #84818a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    flex-shrink: 0;
+    &::after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+  }
+}

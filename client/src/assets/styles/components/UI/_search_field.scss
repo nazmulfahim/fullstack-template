@@ -1,0 +1,17 @@
+.search_field {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  svg {
+    position: absolute;
+  }
+  input {
+    padding: 0px 60px;
+  }
+  svg:first-child {
+    transform: translate(100%, 60%);
+  }
+  svg:last-child {
+    transform: translate(-200%, 60%);
+  }
+}
